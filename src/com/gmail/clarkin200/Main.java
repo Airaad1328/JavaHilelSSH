@@ -14,9 +14,18 @@ public class Main {
         double mile = sc.nextDouble();
         System.out.println("Enter your number");
         double km = sc.nextDouble();
+
+        double resultMile = convKmToMile(km);
+        double resultKm = convMileToKm(mile);
+
+        System.out.println("Result is " + resultMile + " Mile and " + resultKm + " km23");
     }
 
     private static double convKmToMile(double km) {
         return km * CONV_M;
+    }
+
+    private static double convMileToKm(double mile) {
+        return mile / CONV_M;
     }
 }
